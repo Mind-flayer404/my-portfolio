@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio website of Shashank Dey - Full Stack Developer">
+    <title>Shashank Dey | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header id="header">
+        <nav>
+            <div class="logo">SD.</div>
+            <ul id="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+                ☰
+            </button>
+        </nav>
+    </header>
+
+    <!-- Home / Hero Section -->
+    <section id="home">
+        <div class="container">
+            <div class="hero-content">
+                <p class="hero-greeting">👋 Hello, I'm</p>
+                <h1 class="hero-title">Shashank Dey</h1>
+                <p class="hero-subtitle">Full Stack Developer & <span class="text-gradient">Creative Problem
+                        Solver</span></p>
+                <p class="hero-description">
+                    I craft beautiful, functional, and user-centric digital experiences.
+                    Passionate about building innovative solutions that make a difference.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <h2 class="section-title">Professional <span class="gradient-text">Experience</span></h2>
+            <p class="section-subtitle">My journey through the tech industry</p>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2023 - Present</div>
+                    <h3 class="timeline-title">Senior Full Stack Developer</h3>
+                    <p class="timeline-company">Tech Innovations Inc.</p>
+                    <p class="timeline-description">
+                        Leading development of scalable web applications using React, Node.js, and cloud technologies.
+                        Mentoring junior developers and implementing best practices across the team.
+                        Successfully delivered 5+ major projects with 99.9% uptime.
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2021 - 2023</div>
+                    <h3 class="timeline-title">Full Stack Developer</h3>
+                    <p class="timeline-company">Digital Solutions Ltd.</p>
+                    <p class="timeline-description">
+                        Developed and maintained multiple client-facing applications.
+                        Collaborated with cross-functional teams to deliver high-quality software solutions.
+                        Improved application performance by 40% through optimization techniques.
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2019 - 2021</div>
+                    <h3 class="timeline-title">Frontend Developer</h3>
+                    <p class="timeline-company">Creative Web Agency</p>
+                    <p class="timeline-description">
+                        Built responsive and interactive user interfaces using modern JavaScript frameworks.
+                        Worked closely with designers to implement pixel-perfect designs.
+                        Contributed to open-source projects and internal tooling.
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2018 - 2019</div>
+                    <h3 class="timeline-title">Junior Developer</h3>
+                    <p class="timeline-company">StartUp Ventures</p>
+                    <p class="timeline-description">
+                        Started my professional journey building web applications and learning industry best practices.
+                        Participated in code reviews and agile development processes.
+                        Rapidly grew technical skills across the full stack.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+            <p class="section-subtitle">Some of my recent work that I'm proud of</p>
+
+            <div class="grid grid-3">
+                <div class="project-card">
+                    <div class="project-image">🚀</div>
+                    <div class="project-content">
+                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <p class="project-description">
+                            A full-featured e-commerce platform with real-time inventory management,
+                            payment integration, and advanced analytics dashboard.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">Stripe</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">View Demo</a>
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">📱</div>
+                    <div class="project-content">
+                        <h3 class="project-title">Social Media Dashboard</h3>
+                        <p class="project-description">
+                            Analytics dashboard for managing multiple social media accounts with
+                            real-time metrics, scheduling, and engagement tracking.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">Express</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Redis</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">View Demo</a>
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">🎨</div>
+                    <div class="project-content">
+                        <h3 class="project-title">Design System Library</h3>
+                        <p class="project-description">
+                            Comprehensive component library with 50+ reusable components,
+                            documentation, and theming support for enterprise applications.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Storybook</span>
+                            <span class="tag">CSS-in-JS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">View Demo</a>
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">🤖</div>
+                    <div class="project-content">
+                        <h3 class="project-title">AI Chat Application</h3>
+                        <p class="project-description">
+                            Real-time chat application with AI-powered responses,
+                            file sharing, and end-to-end encryption for secure communication.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Next.js</span>
+                            <span class="tag">Socket.io</span>
+                            <span class="tag">OpenAI</span>
+                            <span class="tag">AWS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">View Demo</a>
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">📊</div>
+                    <div class="project-content">
+                        <h3 class="project-title">Data Visualization Tool</h3>
+                        <p class="project-description">
+                            Interactive data visualization platform for analyzing complex datasets
+                            with customizable charts and export capabilities.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">D3.js</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Flask</span>
+                            <span class="tag">Pandas</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">View Demo</a>
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">🎯</div>
+                    <div class="project-content">
+                        <h3 class="project-title">Task Management System</h3>
+                        <p class="project-description">
+                            Collaborative project management tool with kanban boards,
+                            time tracking, and team collaboration features.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Angular</span>
+                            <span class="tag">NestJS</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Docker</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">View Demo</a>
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & <span class="gradient-text">Technologies</span></h2>
+            <p class="section-subtitle">Tools and technologies I work with</p>
+
+            <div class="skills-category">
+                <h3 class="skills-category-title">Frontend Development</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <span class="skill-icon">⚛️</span>
+                        <div class="skill-name">React</div>
+                        <div class="skill-level">Advanced</div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-icon">🅰️</span>
+                        <div class="skill-name">Angular</div>
+                        <div class="skill-level">Intermediate</div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-icon">💚</span>
+                        <div class="skill-name">Vue.js</div>
+                        <div class="skill-level">Advanced</div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-icon">📘</span>
+                        <div class="skill-name">TypeScript</div>
+                        <div class="skill-level">Advanced</div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-icon">🎨</span>
+                        <div class="skill-name">CSS/SASS</div>
+                        <div class="skill-level">Expert</div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-icon">🌊</span>
+                        <div class="skill-name">Tailwind</div>
+                        <div class="skill-level">Advanced</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h3 class="skills-category-title">Backend Development</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <span class="skill-icon">🟢</span>
+                        <div class="skill-name">Node.js</div>
+                        <div class="skill-level">Advanced</div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-icon">🐍</span>
+                        <div class="skill-name">Python</div>
+                        <div class="skill-level">Intermediate</div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-icon">🚂</span>
+                        <div class="skill-name">Express</div>
+                        <div class="skill-level">Advanced</div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-icon">🦅</span>
+                        <div class="skill-name">NestJS</div>
+                        <div class="skill-level">Intermediate</div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-icon">🔥</span>
+                        <div class="skill-name">GraphQL</div>
+                        <div class="skill-level">Advanced</div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-icon">🔌</span>
+                        <div class="skill-name">REST API</div>
+                        <div class="skill-level">Expert</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h3 class="skills-category-title">Database & Cloud</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <span class="skill-icon">🍃</span>
+                        <div class="skill-name">MongoDB</div>
+                        <div class="skill-level">Advanced</div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-icon">🐘</span>
+                        <div class="skill-name">PostgreSQL</div>
+                        <div class="skill-level">Advanced</div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-icon">🔴</span>
+                        <div class="skill-name">Redis</div>
+                        <div class="skill-level">Intermediate</div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-icon">☁️</span>
+                        <div class="skill-name">AWS</div>
+                        <div class="skill-level">Intermediate</div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-icon">🐳</span>
+                        <div class="skill-name">Docker</div>
+                        <div class="skill-level">Advanced</div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-icon">☸️</span>
+                        <div class="skill-name">Kubernetes</div>
+                        <div class="skill-level">Beginner</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h3 class="skills-category-title">Tools & Others</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <span class="skill-icon">📦</span>
+                        <div class="skill-name">Git</div>
+                        <div class="skill-level">Expert</div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-icon">🔧</span>
+                        <div class="skill-name">Webpack</div>
+                        <div class="skill-level">Advanced</div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-icon">⚡</span>
+                        <div class="skill-name">Vite</div>
+                        <div class="skill-level">Advanced</div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-icon">🧪</span>
+                        <div class="skill-name">Jest</div>
+                        <div class="skill-level">Advanced</div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-icon">🎭</span>
+                        <div class="skill-name">Playwright</div>
+                        <div class="skill-level">Intermediate</div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-icon">📱</span>
+                        <div class="skill-name">React Native</div>
+                        <div class="skill-level">Intermediate</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+            <p class="section-subtitle">Let's work together on your next project</p>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-info-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>shashank.dey@example.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p>+91 98765 43210</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>Bangalore, India</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-icon">💼</div>
+                        <div class="contact-details">
+                            <h3>LinkedIn</h3>
+                            <p>linkedin.com/in/shashankdey</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required placeholder="What's this about?">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required
+                            placeholder="Tell me about your project..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Shashank Dey. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" class="social-link" aria-label="GitHub">💻</a>
+                <a href="#" class="social-link" aria-label="LinkedIn">💼</a>
+                <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+                <a href="#" class="social-link" aria-label="Email">📧</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
