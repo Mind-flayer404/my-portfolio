@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio website of Shashank Dey - Full Stack Developer">
+    <meta name="description" content="Portfolio website of Shashank Dey - Aspiring Data Engineer">
     <title>Shashank Dey | Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -36,7 +37,8 @@
                 <p class="hero-subtitle">Associate Data Engineer & <span class="text-gradient">Creative Problem
                         Solver</span></p>
                 <p class="hero-description">
-                    I craft beautiful, functional, and user-centric digital experiences.
+                    I design, develop, and optimise large-scale ETL applications and streaming architectures using
+                    Databricks, AWS, Spark, and Snowflake.
                     Passionate about building innovative solutions that make a difference.
                 </p>
                 <div class="hero-cta">
@@ -55,46 +57,45 @@
 
             <div class="timeline">
                 <div class="timeline-item">
-                    <div class="timeline-date">2023 - Present</div>
-                    <h3 class="timeline-title">Senior Data Engineer</h3>
-                    <p class="timeline-company">Tech Innovations Inc.</p>
+                    <div class="timeline-date">Jan 2025 - Present</div>
+                    <h3 class="timeline-title">Data Engineer | Associate</h3>
+                    <p class="timeline-company">Goldman Sachs</p>
                     <p class="timeline-description">
-                        Leading development of scalable web applications using React, Node.js, and cloud technologies.
-                        Mentoring junior developers and implementing best practices across the team.
-                        Successfully delivered 5+ major projects with 99.9% uptime.
+                        - Streamlined Snowflake ingestion by integrating with Databricks Autoloader, resulting in $100K
+                        annual savings in computation costs <br>
+                        - Optimised streaming architecture performance and reliability, achieving 50% faster execution
+                        through targeted optimisations and robust monitoring / alerting systems <br>
+                        - Upgraded DBR versions across all workflows, resolving compatibility issues for diverse
+                        libraries / modules by developing custom init scripts
                     </p>
                 </div>
 
                 <div class="timeline-item">
-                    <div class="timeline-date">2021 - 2023</div>
-                    <h3 class="timeline-title">Data Engineer</h3>
-                    <p class="timeline-company">Digital Solutions Ltd.</p>
+                    <div class="timeline-date">Jul 2022 - Dec 2024</div>
+                    <h3 class="timeline-title">Data Engineer | Analyst</h3>
+                    <p class="timeline-company">Goldman Sachs</p>
                     <p class="timeline-description">
-                        Developed and maintained multiple client-facing applications.
-                        Collaborated with cross-functional teams to deliver high-quality software solutions.
-                        Improved application performance by 40% through optimization techniques.
+                        - Developed and managed automated streaming ingestion workflows for 50+ diverse services,
+                        processing over 250 datasets with Databricks Autoloader and robust data re-processing
+                        capabilities <br>
+                        - Engineered and executed large-scale ETL pipelines, ingesting 150+ Delta tables into Snowflake
+                        and successfully migrating 250+ Iceberg tables to Delta Lake <br>
+                        - Automated the generation of critical Customer & Account extracts for FDIC reporting and
+                        developed data mappings (Alloy) between logical models and physical datasets
                     </p>
                 </div>
 
                 <div class="timeline-item">
-                    <div class="timeline-date">2019 - 2021</div>
-                    <h3 class="timeline-title">Data Engineer</h3>
-                    <p class="timeline-company">Creative Web Agency</p>
+                    <div class="timeline-date">Jan 2022 - Jun 2022</div>
+                    <h3 class="timeline-title">Data Engineer | Intern</h3>
+                    <p class="timeline-company">Sigmoid Analytics</p>
                     <p class="timeline-description">
-                        Built responsive and interactive user interfaces using modern JavaScript frameworks.
-                        Worked closely with designers to implement pixel-perfect designs.
-                        Contributed to open-source projects and internal tooling.
-                    </p>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-date">2018 - 2019</div>
-                    <h3 class="timeline-title">Junior Developer</h3>
-                    <p class="timeline-company">StartUp Ventures</p>
-                    <p class="timeline-description">
-                        Started my professional journey building web applications and learning industry best practices.
-                        Participated in code reviews and agile development processes.
-                        Rapidly grew technical skills across the full stack.
+                        - Built a Live Tweets Ingestion engine using Twitter API fetching Covid Tweets to build a
+                        sentiment analysis model <br>
+                        - Used Kafka and Spark streaming to ingest the data in real-time, python for data cleansing and
+                        transformations, and MongoDB to store the data <br>
+                        - Encrypted the data with pymongo, orchestrated on Airflow, and drew insights using matplotlib
+                        and seaborn
                     </p>
                 </div>
             </div>
@@ -105,134 +106,107 @@
     <section id="projects">
         <div class="container">
             <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
-            <p class="section-subtitle">Some of my recent work that I'm proud of</p>
+            <p class="section-subtitle">Some of my personal projects, more to come in future!!</p>
 
             <div class="grid grid-3">
                 <div class="project-card">
-                    <div class="project-image">🚀</div>
+                    <div class="project-image">🐦</div>
                     <div class="project-content">
-                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <h3 class="project-title">Covid Tweet Analyser</h3>
                         <p class="project-description">
-                            A full-featured e-commerce platform with real-time inventory management,
-                            payment integration, and advanced analytics dashboard.
+                            A Live Tweets Ingestion engine using Twitter API fetching Covid Tweets to build a
+                            sentiment analysis model
                         </p>
                         <div class="project-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">Node.js</span>
-                            <span class="tag">MongoDB</span>
-                            <span class="tag">Stripe</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">View Demo</a>
-                            <a href="#" class="project-link">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">📱</div>
-                    <div class="project-content">
-                        <h3 class="project-title">Social Media Dashboard</h3>
-                        <p class="project-description">
-                            Analytics dashboard for managing multiple social media accounts with
-                            real-time metrics, scheduling, and engagement tracking.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">Vue.js</span>
-                            <span class="tag">Express</span>
-                            <span class="tag">PostgreSQL</span>
-                            <span class="tag">Redis</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">View Demo</a>
-                            <a href="#" class="project-link">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">🎨</div>
-                    <div class="project-content">
-                        <h3 class="project-title">Design System Library</h3>
-                        <p class="project-description">
-                            Comprehensive component library with 50+ reusable components,
-                            documentation, and theming support for enterprise applications.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">TypeScript</span>
-                            <span class="tag">Storybook</span>
-                            <span class="tag">CSS-in-JS</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">View Demo</a>
-                            <a href="#" class="project-link">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">🤖</div>
-                    <div class="project-content">
-                        <h3 class="project-title">AI Chat Application</h3>
-                        <p class="project-description">
-                            Real-time chat application with AI-powered responses,
-                            file sharing, and end-to-end encryption for secure communication.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">Next.js</span>
-                            <span class="tag">Socket.io</span>
-                            <span class="tag">OpenAI</span>
-                            <span class="tag">AWS</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">View Demo</a>
-                            <a href="#" class="project-link">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">📊</div>
-                    <div class="project-content">
-                        <h3 class="project-title">Data Visualization Tool</h3>
-                        <p class="project-description">
-                            Interactive data visualization platform for analyzing complex datasets
-                            with customizable charts and export capabilities.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">D3.js</span>
                             <span class="tag">Python</span>
-                            <span class="tag">Flask</span>
-                            <span class="tag">Pandas</span>
+                            <span class="tag">Kafka</span>
+                            <span class="tag">Spark</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">Twitter API</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link">View Demo</a>
-                            <a href="#" class="project-link">GitHub</a>
+                            <a href="https://github.com/Shashank-sigmoid/covid-tweet-analysis"
+                                class="project-link">GitHub</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-image">🎯</div>
+                    <div class="project-image">📍</div>
                     <div class="project-content">
-                        <h3 class="project-title">Task Management System</h3>
+                        <h3 class="project-title">Nearby Places</h3>
                         <p class="project-description">
-                            Collaborative project management tool with kanban boards,
-                            time tracking, and team collaboration features.
+                            A mobile application that helps you find nearby places based on your current location
                         </p>
                         <div class="project-tags">
-                            <span class="tag">Angular</span>
-                            <span class="tag">NestJS</span>
-                            <span class="tag">MySQL</span>
-                            <span class="tag">Docker</span>
+                            <span class="tag">Java</span>
+                            <span class="tag">Android</span>
+                            <span class="tag">Google Maps API</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link">View Demo</a>
-                            <a href="#" class="project-link">GitHub</a>
+                            <a href="https://github.com/Mind-flayer404/Nearby-Places" class="project-link">GitHub</a>
                         </div>
                     </div>
                 </div>
+
+                <div class="project-card">
+                    <div class="project-image">⛅</div>
+                    <div class="project-content">
+                        <h3 class="project-title">Weather App</h3>
+                        <p class="project-description">
+                            A web application to fetch the current weather of a city input from user
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">OpenWeatherMap API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Mind-flayer404/Weather-App" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">🎵</div>
+                    <div class="project-content">
+                        <h3 class="project-title">Music Player</h3>
+                        <p class="project-description">
+                            A music player application that allows you to play music infinitely on loop
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Mind-flayer404/Steins-Gate-Soundtrack"
+                                class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">👁️</div>
+                    <div class="project-content">
+                        <h3 class="project-title">Face and Eye Detection</h3>
+                        <p class="project-description">
+                            A real-time face and eye detection system capturing facial features from images using Haar
+                            Cascades
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Haar Cascades</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Jupyter Notebook</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Mind-flayer404/Face-and-Eye-Detection"
+                                class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -244,73 +218,32 @@
             <p class="section-subtitle">Tools and technologies I work with</p>
 
             <div class="skills-category">
-                <h3 class="skills-category-title">Frontend Development</h3>
+                <h3 class="skills-category-title">Languages</h3>
                 <div class="skills-grid">
                     <div class="skill-item">
-                        <span class="skill-icon">⚛️</span>
-                        <div class="skill-name">React</div>
-                        <div class="skill-level">Advanced</div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-icon">🅰️</span>
-                        <div class="skill-name">Angular</div>
-                        <div class="skill-level">Intermediate</div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-icon">💚</span>
-                        <div class="skill-name">Vue.js</div>
-                        <div class="skill-level">Advanced</div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-icon">📘</span>
-                        <div class="skill-name">TypeScript</div>
-                        <div class="skill-level">Advanced</div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-icon">🎨</span>
-                        <div class="skill-name">CSS/SASS</div>
-                        <div class="skill-level">Expert</div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-icon">🌊</span>
-                        <div class="skill-name">Tailwind</div>
-                        <div class="skill-level">Advanced</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="skills-category">
-                <h3 class="skills-category-title">Backend Development</h3>
-                <div class="skills-grid">
-                    <div class="skill-item">
-                        <span class="skill-icon">🟢</span>
-                        <div class="skill-name">Node.js</div>
-                        <div class="skill-level">Advanced</div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-icon">🐍</span>
+                        <i class="skill-icon devicon-python-plain colored"></i>
                         <div class="skill-name">Python</div>
-                        <div class="skill-level">Intermediate</div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-icon">🚂</span>
-                        <div class="skill-name">Express</div>
-                        <div class="skill-level">Advanced</div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-icon">🦅</span>
-                        <div class="skill-name">NestJS</div>
-                        <div class="skill-level">Intermediate</div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-icon">🔥</span>
-                        <div class="skill-name">GraphQL</div>
-                        <div class="skill-level">Advanced</div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-icon">🔌</span>
-                        <div class="skill-name">REST API</div>
                         <div class="skill-level">Expert</div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="skill-icon devicon-cplusplus-plain colored"></i>
+                        <div class="skill-name">C++</div>
+                        <div class="skill-level">Advanced</div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="skill-icon devicon-javascript-plain colored"></i>
+                        <div class="skill-name">JavaScript</div>
+                        <div class="skill-level">Intermediate</div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="skill-icon devicon-html5-plain colored"></i>
+                        <div class="skill-name">HTML / CSS</div>
+                        <div class="skill-level">Advanced</div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="skill-icon devicon-fastapi-plain colored"></i>
+                        <div class="skill-name">REST API</div>
+                        <div class="skill-level">Advanced</div>
                     </div>
                 </div>
             </div>
@@ -319,70 +252,62 @@
                 <h3 class="skills-category-title">Database & Cloud</h3>
                 <div class="skills-grid">
                     <div class="skill-item">
-                        <span class="skill-icon">🍃</span>
+                        <i class="skill-icon devicon-mongodb-plain colored"></i>
                         <div class="skill-name">MongoDB</div>
                         <div class="skill-level">Advanced</div>
                     </div>
                     <div class="skill-item">
-                        <span class="skill-icon">🐘</span>
+                        <i class="skill-icon devicon-postgresql-plain colored"></i>
                         <div class="skill-name">PostgreSQL</div>
                         <div class="skill-level">Advanced</div>
                     </div>
                     <div class="skill-item">
-                        <span class="skill-icon">🔴</span>
-                        <div class="skill-name">Redis</div>
-                        <div class="skill-level">Intermediate</div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-icon">☁️</span>
+                        <i class="skill-icon devicon-amazonwebservices-plain-wordmark colored"></i>
                         <div class="skill-name">AWS</div>
                         <div class="skill-level">Intermediate</div>
                     </div>
                     <div class="skill-item">
-                        <span class="skill-icon">🐳</span>
-                        <div class="skill-name">Docker</div>
-                        <div class="skill-level">Advanced</div>
+                        <img class="skill-icon-svg" src="icons/idCkdSg0B6_1771499898466.svg" alt="Snowflake" width="40"
+                            height="40">
+                        <div class="skill-name">Snowflake</div>
+                        <div class="skill-level">Expert</div>
                     </div>
                     <div class="skill-item">
-                        <span class="skill-icon">☸️</span>
-                        <div class="skill-name">Kubernetes</div>
-                        <div class="skill-level">Beginner</div>
+                        <i class="skill-icon devicon-apacheairflow-plain colored"></i>
+                        <div class="skill-name">Airflow</div>
+                        <div class="skill-level">Expert</div>
                     </div>
                 </div>
             </div>
 
             <div class="skills-category">
-                <h3 class="skills-category-title">Tools & Others</h3>
+                <h3 class="skills-category-title">Tools & Technologies</h3>
                 <div class="skills-grid">
                     <div class="skill-item">
-                        <span class="skill-icon">📦</span>
-                        <div class="skill-name">Git</div>
+                        <img class="skill-icon-svg" src="icons/azure-databricks.svg" alt="Databricks" width="40"
+                            height="40">
+                        <div class="skill-name">Databricks</div>
                         <div class="skill-level">Expert</div>
                     </div>
                     <div class="skill-item">
-                        <span class="skill-icon">🔧</span>
-                        <div class="skill-name">Webpack</div>
+                        <i class="skill-icon devicon-apachespark-plain colored"></i>
+                        <div class="skill-name">Spark</div>
+                        <div class="skill-level">Expert</div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="skill-icon devicon-apachekafka-original" style="color: #e2e8f0;"></i>
+                        <div class="skill-name">Streaming</div>
+                        <div class="skill-level">Expert</div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="skill-icon devicon-git-plain colored"></i>
+                        <div class="skill-name">Git</div>
                         <div class="skill-level">Advanced</div>
                     </div>
                     <div class="skill-item">
-                        <span class="skill-icon">⚡</span>
-                        <div class="skill-name">Vite</div>
+                        <i class="skill-icon devicon-vscode-plain colored"></i>
+                        <div class="skill-name">VS Code</div>
                         <div class="skill-level">Advanced</div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-icon">🧪</span>
-                        <div class="skill-name">Jest</div>
-                        <div class="skill-level">Advanced</div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-icon">🎭</span>
-                        <div class="skill-name">Playwright</div>
-                        <div class="skill-level">Intermediate</div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-icon">📱</span>
-                        <div class="skill-name">React Native</div>
-                        <div class="skill-level">Intermediate</div>
                     </div>
                 </div>
             </div>
@@ -398,10 +323,18 @@
             <div class="contact-container">
                 <div class="contact-info">
                     <div class="contact-info-item">
-                        <div class="contact-icon">📧</div>
+                        <a href="mailto:shashankabc1234@gmail.com" class="contact-icon">📧</a>
                         <div class="contact-details">
                             <h3>Email</h3>
                             <p>shashankabc1234@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <a href="https://www.linkedin.com/in/shashank-dey/" class="contact-icon">💼</a>
+                        <div class="contact-details">
+                            <h3>LinkedIn</h3>
+                            <p>https://www.linkedin.com/in/shashank-dey/</p>
                         </div>
                     </div>
 
@@ -414,6 +347,14 @@
                     </div>
 
                     <div class="contact-info-item">
+                        <a href="https://github.com/Mind-flayer404" class="contact-icon">💻</a>
+                        <div class="contact-details">
+                            <h3>GitHub</h3>
+                            <p>https://github.com/Mind-flayer404</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
                         <div class="contact-icon">📍</div>
                         <div class="contact-details">
                             <h3>Location</h3>
@@ -421,13 +362,6 @@
                         </div>
                     </div>
 
-                    <div class="contact-info-item">
-                        <div class="contact-icon">💼</div>
-                        <div class="contact-details">
-                            <h3>LinkedIn</h3>
-                            <p>https://www.linkedin.com/in/shashank-dey/</p>
-                        </div>
-                    </div>
                 </div>
 
                 <form class="contact-form" id="contact-form">
@@ -449,7 +383,7 @@
                     <div class="form-group">
                         <label for="message">Message</label>
                         <textarea id="message" name="message" required
-                            placeholder="Tell me about your project..."></textarea>
+                            placeholder="Write your message here..."></textarea>
                     </div>
 
                     <button type="submit" class="btn btn-primary">Send Message</button>
@@ -461,7 +395,7 @@
     <!-- Footer -->
     <footer>
         <div class="footer-content">
-            <p>&copy; Made with ❤️ by Shashank Dey</p>
+            <p>Made with ❤️ by Shashank Dey</p>
             <div class="social-links">
                 <a href="https://github.com/Mind-flayer404" class="social-link" aria-label="GitHub">💻</a>
                 <a href="https://www.linkedin.com/in/shashank-dey/" class="social-link" aria-label="LinkedIn">💼</a>

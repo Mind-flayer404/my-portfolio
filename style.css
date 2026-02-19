@@ -653,6 +653,15 @@ section {
     font-size: 2.5rem;
     margin-bottom: var(--spacing-sm);
     display: block;
+    color: var(--color-accent-primary);
+    font-style: normal;
+    line-height: 1.2;
+}
+
+.skill-icon-svg {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0 auto var(--spacing-sm);
 }
 
 .skill-name {
