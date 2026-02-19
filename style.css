@@ -769,7 +769,7 @@ section {
 }
 
 .form-group textarea {
-    resize: vertical;
+    resize: none;
     min-height: 150px;
 }
 
@@ -850,6 +850,10 @@ footer {
 @media (max-width: 768px) {
     section {
         padding: var(--spacing-2xl) var(--spacing-md);
+    }
+
+    #home {
+        padding-top: 120px;
     }
 
     nav ul {
