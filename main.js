@@ -130,33 +130,20 @@ contactForm.addEventListener('submit', (e) => {
     submitBtn.textContent = 'Sending...';
     submitBtn.disabled = true;
 
-    // Send email using FormSubmit AJAX API
-    fetch('https://formsubmit.co/ajax/shashankabc1234@gmail.com', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-        },
-        body: JSON.stringify({
-            name: data.name,
-            email: data.email,
-            subject: data.subject,
-            message: data.message,
-            _subject: `New Portfolio Message from ${data.name}`,
-            _captcha: "false"
-        })
+    // Send email using EmailJS API
+    emailjs.send('service_x4wvr53', 'template_9j2lsmu', {
+        from_name: data.name,
+        reply_to: data.email,
+        subject: data.subject,
+        message: data.message,
     })
-        .then(response => response.json())
-        .then(result => {
-            if (result.success === "true" || result.success === true) {
-                // Show success message
-                submitBtn.textContent = '✓ Message Sent!';
-                submitBtn.style.background = 'linear-gradient(135deg, #10b981 0%, #059669 100%)';
-                // Reset form
-                contactForm.reset();
-            } else {
-                throw new Error('Form submission failed');
-            }
+        .then(response => {
+            console.log('SUCCESS!', response.status, response.text);
+            // Show success message
+            submitBtn.textContent = '✓ Message Sent!';
+            submitBtn.style.background = 'linear-gradient(135deg, #10b981 0%, #059669 100%)';
+            // Reset form
+            contactForm.reset();
         })
         .catch(error => {
             console.error('Error:', error);
