@@ -123,24 +123,54 @@ contactForm.addEventListener('submit', (e) => {
     // Get form data
     const formData = new FormData(contactForm);
     const data = Object.fromEntries(formData);
-
-    // Simulate form submission
-    console.log('Form submitted:', data);
-
-    // Show success message
     const submitBtn = contactForm.querySelector('button[type="submit"]');
     const originalText = submitBtn.textContent;
-    submitBtn.textContent = '✓ Message Sent!';
-    submitBtn.style.background = 'linear-gradient(135deg, #10b981 0%, #059669 100%)';
 
-    // Reset form
-    contactForm.reset();
+    // Show loading state
+    submitBtn.textContent = 'Sending...';
+    submitBtn.disabled = true;
 
-    // Reset button after 3 seconds
-    setTimeout(() => {
-        submitBtn.textContent = originalText;
-        submitBtn.style.background = '';
-    }, 3000);
+    // Send email using FormSubmit AJAX API
+    fetch('https://formsubmit.co/ajax/shashankabc1234@gmail.com', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+            name: data.name,
+            email: data.email,
+            subject: data.subject,
+            message: data.message,
+            _subject: `New Portfolio Message from ${data.name}`,
+            _captcha: "false"
+        })
+    })
+        .then(response => response.json())
+        .then(result => {
+            if (result.success === "true" || result.success === true) {
+                // Show success message
+                submitBtn.textContent = '✓ Message Sent!';
+                submitBtn.style.background = 'linear-gradient(135deg, #10b981 0%, #059669 100%)';
+                // Reset form
+                contactForm.reset();
+            } else {
+                throw new Error('Form submission failed');
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            submitBtn.textContent = '❌ Failed to send';
+            submitBtn.style.background = 'linear-gradient(135deg, #ef4444 0%, #dc2626 100%)';
+        })
+        .finally(() => {
+            // Reset button after 3 seconds
+            setTimeout(() => {
+                submitBtn.textContent = originalText;
+                submitBtn.style.background = '';
+                submitBtn.disabled = false;
+            }, 3000);
+        });
 });
 
 // ============================================
